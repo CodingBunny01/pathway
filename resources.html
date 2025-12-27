@@ -1,4 +1,4 @@
-<!DOCTYPE html> 
+<!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="UTF-8">
@@ -7,6 +7,20 @@
 <link href="style.css" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;800&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
 <style>
+/* Fade-in animation */
+.fade {
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeIn 1s forwards;
+}
+
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
 /* Resource buttons styling */
 .resource-links {
   list-style: none;
@@ -32,6 +46,31 @@
 .resource-links li a:hover {
   transform: scale(1.05);
   background: #3b61cc;
+}
+
+/* Section styling */
+section {
+  padding: 2rem;
+}
+
+.subject-section {
+  border: 2px solid #ccc; 
+  padding: 1rem; 
+  border-radius: 10px; 
+  margin-bottom: 2rem;
+}
+
+/* Jump menu */
+.jump-menu a {
+  margin-right: 1rem;
+  text-decoration: none;
+  color: #4e79ff;
+  font-weight: 600;
+  transition: color 0.2s;
+}
+
+.jump-menu a:hover {
+  color: #3b61cc;
 }
 </style>
 </head>
@@ -61,11 +100,9 @@
   </div>
 
   <!-- Math -->
-  <div id="math" class="subject-section fade" style="border:2px solid #ccc; padding:1rem; border-radius:10px; margin-bottom:2rem;">
+  <div id="math" class="subject-section fade">
     <h3>Mathematics</h3>
-    <a href="https://www.youtube.com/watch?v=JbhBdOfMEPs&list=PLybg94GvOJ9FoGQeUMFZ4SWZsr30jlUYK" target="_blank">
-      <img src="https://img.youtube.com/vi/JbhBdOfMEPs/hqdefault.jpg" style="width:100%; border-radius:10px; margin-bottom:1rem;">
-    </a>
+    <iframe width="100%" height="315" src="https://www.youtube.com/embed/JbhBdOfMEPs?list=PLybg94GvOJ9FoGQeUMFZ4SWZsr30jlUYK" title="Math Playlist" frameborder="0" allowfullscreen></iframe>
     <ul class="resource-links">
       <li style="text-align:left;"><a href="https://www.khanacademy.org/math" target="_blank">Khan Academy Math</a></li>
       <li style="text-align:center;"><a href="https://www.mathsisfun.com/" target="_blank">Math is Fun</a></li>
@@ -74,11 +111,9 @@
   </div>
 
   <!-- Physics -->
-  <div id="physics" class="subject-section fade" style="border:2px solid #ccc; padding:1rem; border-radius:10px; margin-bottom:2rem;">
+  <div id="physics" class="subject-section fade">
     <h3>Physics</h3>
-    <a href="https://www.youtube.com/watch?v=b1t41Q3xRM8&list=PL0o_zxa4K1BU6wPPLDsoTj1_wEf0LSNeR" target="_blank">
-      <img src="https://img.youtube.com/vi/b1t41Q3xRM8/hqdefault.jpg" style="width:100%; border-radius:10px; margin-bottom:1rem;">
-    </a>
+    <iframe width="100%" height="315" src="https://www.youtube.com/embed/b1t41Q3xRM8?list=PL0o_zxa4K1BU6wPPLDsoTj1_wEf0LSNeR" title="Physics Playlist" frameborder="0" allowfullscreen></iframe>
     <ul class="resource-links">
       <li style="text-align:left;"><a href="https://www.khanacademy.org/science/physics" target="_blank">Khan Academy Physics</a></li>
       <li style="text-align:center;"><a href="https://www.physicsclassroom.com/" target="_blank">Physics Classroom</a></li>
@@ -87,11 +122,9 @@
   </div>
 
   <!-- Chemistry -->
-  <div id="chemistry" class="subject-section fade" style="border:2px solid #ccc; padding:1rem; border-radius:10px; margin-bottom:2rem;">
+  <div id="chemistry" class="subject-section fade">
     <h3>Chemistry</h3>
-    <a href="https://www.youtube.com/watch?v=hkBrw2fG75U&list=PLVbX3hqyEEznRj5sfrUK4k86QJeH4y3k7" target="_blank">
-      <img src="https://img.youtube.com/vi/hkBrw2fG75U/hqdefault.jpg" style="width:100%; border-radius:10px; margin-bottom:1rem;">
-    </a>
+    <iframe width="100%" height="315" src="https://www.youtube.com/embed/hkBrw2fG75U?list=PLVbX3hqyEEznRj5sfrUK4k86QJeH4y3k7" title="Chemistry Playlist" frameborder="0" allowfullscreen></iframe>
     <ul class="resource-links">
       <li style="text-align:left;"><a href="https://www.khanacademy.org/science/chemistry" target="_blank">Khan Academy Chemistry</a></li>
       <li style="text-align:center;"><a href="https://www.chemguide.co.uk/" target="_blank">Chemguide</a></li>
@@ -100,11 +133,9 @@
   </div>
 
   <!-- Biology -->
-  <div id="biology" class="subject-section fade" style="border:2px solid #ccc; padding:1rem; border-radius:10px; margin-bottom:2rem;">
+  <div id="biology" class="subject-section fade">
     <h3>Biology</h3>
-    <a href="https://www.youtube.com/watch?v=DHAK-Idi_OY&list=PLwL0Myd7Dk1F0iQPGrjehze3eDpco1eVz" target="_blank">
-      <img src="https://img.youtube.com/vi/DHAK-Idi_OY/hqdefault.jpg" style="width:100%; border-radius:10px; margin-bottom:1rem;">
-    </a>
+    <iframe width="100%" height="315" src="https://www.youtube.com/embed/DHAK-Idi_OY?list=PLwL0Myd7Dk1F0iQPGrjehze3eDpco1eVz" title="Biology Playlist" frameborder="0" allowfullscreen></iframe>
     <ul class="resource-links">
       <li style="text-align:left;"><a href="https://www.khanacademy.org/science/biology" target="_blank">Khan Academy Biology</a></li>
       <li style="text-align:center;"><a href="https://www.nature.com/subjects/biology" target="_blank">Nature - Biology</a></li>
@@ -113,11 +144,9 @@
   </div>
 
   <!-- History -->
-  <div id="history" class="subject-section fade" style="border:2px solid #ccc; padding:1rem; border-radius:10px; margin-bottom:2rem;">
+  <div id="history" class="subject-section fade">
     <h3>History</h3>
-    <a href="https://www.youtube.com/watch?v=Yocja_N5s1I&list=PLBDA2E52FB1EF80C9" target="_blank">
-      <img src="https://img.youtube.com/vi/Yocja_N5s1I/hqdefault.jpg" style="width:100%; border-radius:10px; margin-bottom:1rem;">
-    </a>
+    <iframe width="100%" height="315" src="https://www.youtube.com/embed/Yocja_N5s1I?list=PLBDA2E52FB1EF80C9" title="History Playlist" frameborder="0" allowfullscreen></iframe>
     <ul class="resource-links">
       <li style="text-align:left;"><a href="https://www.khanacademy.org/humanities/world-history" target="_blank">Khan Academy History</a></li>
       <li style="text-align:center;"><a href="https://www.history.com/" target="_blank">History.com</a></li>
@@ -126,11 +155,9 @@
   </div>
 
   <!-- English -->
-  <div id="english" class="subject-section fade" style="border:2px solid #ccc; padding:1rem; border-radius:10px; margin-bottom:2rem;">
+  <div id="english" class="subject-section fade">
     <h3>English</h3>
-    <a href="https://www.youtube.com/watch?v=8IogxPUrW7k&list=PL2IkMHFHWdEo-t2mIKmk_HwrJYOTwlT0i&pp=0gcJCbEEOCosWNin" target="_blank">
-      <img src="https://img.youtube.com/vi/8IogxPUrW7k/hqdefault.jpg" style="width:100%; border-radius:10px; margin-bottom:1rem;">
-    </a>
+    <iframe width="100%" height="315" src="https://www.youtube.com/embed/8IogxPUrW7k?list=PL2IkMHFHWdEo-t2mIKmk_HwrJYOTwlT0i&pp=0gcJCbEEOCosWNin" title="English Playlist" frameborder="0" allowfullscreen></iframe>
     <ul class="resource-links">
       <li style="text-align:left;"><a href="https://www.khanacademy.org/ela" target="_blank">Khan Academy English</a></li>
       <li style="text-align:center;"><a href="https://www.grammarly.com/blog/" target="_blank">Grammarly Blog</a></li>
@@ -139,11 +166,9 @@
   </div>
 
   <!-- Arabic -->
-  <div id="arabic" class="subject-section fade" style="border:2px solid #ccc; padding:1rem; border-radius:10px; margin-bottom:2rem;">
+  <div id="arabic" class="subject-section fade">
     <h3>Arabic</h3>
-    <a href="https://www.youtube.com/watch?v=NapGLT3WFX8&list=PLr_tqbGZylgY_ZGOgGO2KlCLknUPA8g4w" target="_blank">
-      <img src="https://img.youtube.com/vi/NapGLT3WFX8/hqdefault.jpg" style="width:100%; border-radius:10px; margin-bottom:1rem;">
-    </a>
+    <iframe width="100%" height="315" src="https://www.youtube.com/embed/NapGLT3WFX8?list=PLr_tqbGZylgY_ZGOgGO2KlCLknUPA8g4w" title="Arabic Playlist" frameborder="0" allowfullscreen></iframe>
     <ul class="resource-links">
       <li style="text-align:left;"><a href="https://www.khanacademy.org/humanities/world-history" target="_blank">Arabic Learning Resource</a></li>
       <li style="text-align:center;"><a href="https://www.arabicpod101.com/" target="_blank">ArabicPod101</a></li>
