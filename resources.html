@@ -21,15 +21,18 @@
   }
 }
 
-/* Resource buttons styling */
+/* Resource buttons - horizontal row */
 .resource-links {
   list-style: none;
   padding: 0;
   margin: 1rem 0;
+  display: flex;
+  justify-content: space-between; /* left, center, right */
+  align-items: center;
 }
 
 .resource-links li {
-  margin: 0.5rem 0;
+  margin: 0; /* remove vertical spacing */
 }
 
 .resource-links li a {
@@ -40,12 +43,13 @@
   color: white;
   text-decoration: none;
   font-weight: 600;
-  transition: transform 0.2s, background 0.2s;
+  transition: transform 0.3s, background 0.3s;
 }
 
+/* Hover effect: zoom + pinkish color */
 .resource-links li a:hover {
-  transform: scale(1.05);
-  background: #3b61cc;
+  transform: scale(1.1);
+  background: #ff6fa3; /* pinkish color */
 }
 
 /* Section styling */
@@ -104,9 +108,9 @@ section {
     <h3>Mathematics</h3>
     <iframe width="100%" height="315" src="https://www.youtube.com/embed/JbhBdOfMEPs?list=PLybg94GvOJ9FoGQeUMFZ4SWZsr30jlUYK" title="Math Playlist" frameborder="0" allowfullscreen></iframe>
     <ul class="resource-links">
-      <li style="text-align:left;"><a href="https://www.khanacademy.org/math" target="_blank">Khan Academy Math</a></li>
-      <li style="text-align:center;"><a href="https://www.mathsisfun.com/" target="_blank">Math is Fun</a></li>
-      <li style="text-align:right;"><a href="https://www.youtube.com/watch?v=T_6Mq6PWoGc&list=PL0o_zxa4K1BXr49VZTEyUS5-G8fz0Pt1v" target="_blank">YouTube Math</a></li>
+      <li><a href="https://www.khanacademy.org/math" target="_blank">Khan Academy Math</a></li>
+      <li><a href="https://www.mathsisfun.com/" target="_blank">Math is Fun</a></li>
+      <li><a href="https://www.youtube.com/watch?v=T_6Mq6PWoGc&list=PL0o_zxa4K1BXr49VZTEyUS5-G8fz0Pt1v" target="_blank">YouTube Math</a></li>
     </ul>
   </div>
 
@@ -115,9 +119,9 @@ section {
     <h3>Physics</h3>
     <iframe width="100%" height="315" src="https://www.youtube.com/embed/b1t41Q3xRM8?list=PL0o_zxa4K1BU6wPPLDsoTj1_wEf0LSNeR" title="Physics Playlist" frameborder="0" allowfullscreen></iframe>
     <ul class="resource-links">
-      <li style="text-align:left;"><a href="https://www.khanacademy.org/science/physics" target="_blank">Khan Academy Physics</a></li>
-      <li style="text-align:center;"><a href="https://www.physicsclassroom.com/" target="_blank">Physics Classroom</a></li>
-      <li style="text-align:right;"><a href="https://www.youtube.com/watch?v=OoO5d5P0Jn4&list=PL8dPuuaLjXtN0ge7yDk_UA0ldZJdhwkoV" target="_blank">YouTube Physics</a></li>
+      <li><a href="https://www.khanacademy.org/science/physics" target="_blank">Khan Academy Physics</a></li>
+      <li><a href="https://www.physicsclassroom.com/" target="_blank">Physics Classroom</a></li>
+      <li><a href="https://www.youtube.com/watch?v=OoO5d5P0Jn4&list=PL8dPuuaLjXtN0ge7yDk_UA0ldZJdhwkoV" target="_blank">YouTube Physics</a></li>
     </ul>
   </div>
 
@@ -126,9 +130,9 @@ section {
     <h3>Chemistry</h3>
     <iframe width="100%" height="315" src="https://www.youtube.com/embed/hkBrw2fG75U?list=PLVbX3hqyEEznRj5sfrUK4k86QJeH4y3k7" title="Chemistry Playlist" frameborder="0" allowfullscreen></iframe>
     <ul class="resource-links">
-      <li style="text-align:left;"><a href="https://www.khanacademy.org/science/chemistry" target="_blank">Khan Academy Chemistry</a></li>
-      <li style="text-align:center;"><a href="https://www.chemguide.co.uk/" target="_blank">Chemguide</a></li>
-      <li style="text-align:right;"><a href="https://www.youtube.com/watch?v=uVFCOfSuPTo&list=PL8dPuuaLjXtPHzzYuWy6fYEaX9mQQ8oGr&pp=0gcJCbEEOCosWNin" target="_blank">YouTube Chemistry</a></li>
+      <li><a href="https://www.khanacademy.org/science/chemistry" target="_blank">Khan Academy Chemistry</a></li>
+      <li><a href="https://www.chemguide.co.uk/" target="_blank">Chemguide</a></li>
+      <li><a href="https://www.youtube.com/watch?v=uVFCOfSuPTo&list=PL8dPuuaLjXtPHzzYuWy6fYEaX9mQQ8oGr&pp=0gcJCbEEOCosWNin" target="_blank">YouTube Chemistry</a></li>
     </ul>
   </div>
 
@@ -137,9 +141,9 @@ section {
     <h3>Biology</h3>
     <iframe width="100%" height="315" src="https://www.youtube.com/embed/DHAK-Idi_OY?list=PLwL0Myd7Dk1F0iQPGrjehze3eDpco1eVz" title="Biology Playlist" frameborder="0" allowfullscreen></iframe>
     <ul class="resource-links">
-      <li style="text-align:left;"><a href="https://www.khanacademy.org/science/biology" target="_blank">Khan Academy Biology</a></li>
-      <li style="text-align:center;"><a href="https://www.nature.com/subjects/biology" target="_blank">Nature - Biology</a></li>
-      <li style="text-align:right;"><a href="https://www.youtube.com/watch?v=PWGBqskV1UQ&list=PL8dPuuaLjXtPW_ofbxdHNciuLoTRLPMgB" target="_blank">YouTube Biology</a></li>
+      <li><a href="https://www.khanacademy.org/science/biology" target="_blank">Khan Academy Biology</a></li>
+      <li><a href="https://www.nature.com/subjects/biology" target="_blank">Nature - Biology</a></li>
+      <li><a href="https://www.youtube.com/watch?v=PWGBqskV1UQ&list=PL8dPuuaLjXtPW_ofbxdHNciuLoTRLPMgB" target="_blank">YouTube Biology</a></li>
     </ul>
   </div>
 
@@ -148,9 +152,9 @@ section {
     <h3>History</h3>
     <iframe width="100%" height="315" src="https://www.youtube.com/embed/Yocja_N5s1I?list=PLBDA2E52FB1EF80C9" title="History Playlist" frameborder="0" allowfullscreen></iframe>
     <ul class="resource-links">
-      <li style="text-align:left;"><a href="https://www.khanacademy.org/humanities/world-history" target="_blank">Khan Academy History</a></li>
-      <li style="text-align:center;"><a href="https://www.history.com/" target="_blank">History.com</a></li>
-      <li style="text-align:right;"><a href="https://www.youtube.com/watch?v=ObGarwy5Jss&list=PLSQl0a2vh4HB9UeibLURBlcdR4XzputM9" target="_blank">YouTube History</a></li>
+      <li><a href="https://www.khanacademy.org/humanities/world-history" target="_blank">Khan Academy History</a></li>
+      <li><a href="https://www.history.com/" target="_blank">History.com</a></li>
+      <li><a href="https://www.youtube.com/watch?v=ObGarwy5Jss&list=PLSQl0a2vh4HB9UeibLURBlcdR4XzputM9" target="_blank">YouTube History</a></li>
     </ul>
   </div>
 
@@ -159,9 +163,9 @@ section {
     <h3>English</h3>
     <iframe width="100%" height="315" src="https://www.youtube.com/embed/8IogxPUrW7k?list=PL2IkMHFHWdEo-t2mIKmk_HwrJYOTwlT0i&pp=0gcJCbEEOCosWNin" title="English Playlist" frameborder="0" allowfullscreen></iframe>
     <ul class="resource-links">
-      <li style="text-align:left;"><a href="https://www.khanacademy.org/ela" target="_blank">Khan Academy English</a></li>
-      <li style="text-align:center;"><a href="https://www.grammarly.com/blog/" target="_blank">Grammarly Blog</a></li>
-      <li style="text-align:right;"><a href="https://www.youtube.com/watch?v=YAKcbvioxFk&list=PLJctcoQLpndb-uJ32YP4vnl0nHkgi_QsL" target="_blank">YouTube Writing</a></li>
+      <li><a href="https://www.khanacademy.org/ela" target="_blank">Khan Academy English</a></li>
+      <li><a href="https://www.grammarly.com/blog/" target="_blank">Grammarly Blog</a></li>
+      <li><a href="https://www.youtube.com/watch?v=YAKcbvioxFk&list=PLJctcoQLpndb-uJ32YP4vnl0nHkgi_QsL" target="_blank">YouTube Writing</a></li>
     </ul>
   </div>
 
@@ -170,9 +174,9 @@ section {
     <h3>Arabic</h3>
     <iframe width="100%" height="315" src="https://www.youtube.com/embed/NapGLT3WFX8?list=PLr_tqbGZylgY_ZGOgGO2KlCLknUPA8g4w" title="Arabic Playlist" frameborder="0" allowfullscreen></iframe>
     <ul class="resource-links">
-      <li style="text-align:left;"><a href="https://www.khanacademy.org/humanities/world-history" target="_blank">Arabic Learning Resource</a></li>
-      <li style="text-align:center;"><a href="https://www.arabicpod101.com/" target="_blank">ArabicPod101</a></li>
-      <li style="text-align:right;"><a href="https://www.youtube.com/watch?v=lhAxKGzQrVs&list=PLBv6B6E0IuHgw7symFQKGdqaWgS5yYP31" target="_blank">YouTube Arabic</a></li>
+      <li><a href="https://www.khanacademy.org/humanities/world-history" target="_blank">Arabic Learning Resource</a></li>
+      <li><a href="https://www.arabicpod101.com/" target="_blank">ArabicPod101</a></li>
+      <li><a href="https://www.youtube.com/watch?v=lhAxKGzQrVs&list=PLBv6B6E0IuHgw7symFQKGdqaWgS5yYP31" target="_blank">YouTube Arabic</a></li>
     </ul>
   </div>
 
