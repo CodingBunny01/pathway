@@ -1,8 +1,8 @@
-const images = document.querySelectorAll(".carousel img");
-let current = 0;
+let slides = document.querySelectorAll('.slide');
+let index = 0;
 
 setInterval(() => {
-  images[current].classList.remove("active");
-  current = (current + 1) % images.length;
-  images[current].classList.add("active");
-}, 4500);
+  slides[index].classList.remove('active');
+  index = (index + 1) % slides.length;
+  slides[index].classList.add('active');
+}, 4000);
