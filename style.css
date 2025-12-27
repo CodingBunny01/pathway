@@ -13,6 +13,7 @@ body{
   background:var(--bg);
   color:var(--dark);
   line-height:1.6;
+  padding-top:90px; 
 }
 
 a{text-decoration:none;color:inherit;}
