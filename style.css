@@ -106,3 +106,11 @@ button{background:var(--accent);color:white;border:none;padding:1rem 2rem;border
 .jump-menu{display:flex;gap:1rem;flex-wrap:wrap;margin-bottom:1.5rem;}
 .jump-menu a{padding:.5rem 1rem;background:var(--soft);border-radius:12px;transition:.3s;}
 .jump-menu a:hover{background:var(--accent);color:white;}
+
+.subject-section img{
+  transition: transform 0.3s ease;
+}
+.subject-section img:hover{
+  transform: scale(1.05);
+}
+
