@@ -1,49 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pathway | Subject</title>
-    <link rel="stylesheet" href="css/style.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Subject</title>
+<!-- Google Fonts included -->
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;800&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
 <nav class="navbar">
-    <div class="logo">Pathway</div>
-    <ul class="nav-links">
-        <li><a href="index.html">Home</a></li>
-        <li><a href="resources.html">Resources</a></li>
-        <li><a href="sdg10.html">SDG 10</a></li>
-        <li><a href="help.html">Help</a></li>
-    </ul>
+  <div class="logo">PATHWAY</div>
+  <ul>
+    <li><a href="index.html">Home</a></li>
+    <li><a href="resources.html">Resources</a></li>
+  </ul>
 </nav>
 
-<section class="subject-page">
-    <div class="subject-banner">
-        <h1 id="subject-title">Subject Title</h1>
-    </div>
+<section class="subject-hero fade-in">
+  <h1 id="sub-title"></h1>
+</section>
 
-    <div class="subject-content">
-        <h2>Featured Video</h2>
-        <video controls class="subject-video">
-            <source src="videos/math1.mp4" type="video/mp4">
-        </video>
+<section class="subject-video-section fade-in-up">
+  <video controls>
+    <source id="video-src" src="" type="video/mp4">
+  </video>
 
-        <hr>
-
-        <h2>Helpful Links</h2>
-        <ul class="links">
-            <li><a href="https://www.khanacademy.org" target="_blank">Khan Academy</a></li>
-            <li><a href="https://www.youtube.com" target="_blank">YouTube Learning</a></li>
-        </ul>
-    </div>
+  <h3>Useful Resources</h3>
+  <ul>
+    <li><a href="https://www.khanacademy.org" target="_blank">Khan Academy</a></li>
+    <li><a href="https://www.youtube.com" target="_blank">YouTube Learning</a></li>
+    <li><a href="https://www.wikipedia.org" target="_blank">Wikipedia</a></li>
+  </ul>
 </section>
 
 <script>
-// Change title/video by subject URL
 const params = new URLSearchParams(window.location.search);
-const sub = params.get('sub');
-document.getElementById('subject-title').innerText = sub ? sub.toUpperCase() : "Subject";
+const sub = params.get('sub') || "Subject";
+document.getElementById("sub-title").innerText = sub.toUpperCase();
+document.getElementById("video-src").src = "videos/" + sub + "-study.mp4";
 </script>
 
 </body>
