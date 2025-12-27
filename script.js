@@ -1,22 +1,6 @@
-// Scroll fade-in for sections
-const faders = document.querySelectorAll('.fade-in, .fade-in-up');
-
-const appearOptions = {
-  threshold: 0.1,
-  rootMargin: "0px 0px -50px 0px"
-};
-
-const appearOnScroll = new IntersectionObserver(function(entries, appearOnScroll){
-  entries.forEach(entry => {
-    if(!entry.isIntersecting){
-      return;
-    } else {
-      entry.target.classList.add('appear');
-      appearOnScroll.unobserve(entry.target);
-    }
-  });
-}, appearOptions);
-
-faders.forEach(fader => {
-  appearOnScroll.observe(fader);
-});
+// Fade-in for sections
+const f = document.querySelectorAll('.fade');
+const o = new IntersectionObserver(e=>{
+  e.forEach(x=>x.isIntersecting && x.target.classList.add('show'))
+},{threshold:.2});
+f.forEach(el=>o.observe(el));
