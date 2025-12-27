@@ -1,29 +1,38 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>Help | PATHWAY</title>
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pathway | Help</title>
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+    <nav class="navbar">
+        <div class="logo">Pathway</div>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="resources.html">Resources</a></li>
+            <li><a href="sdg10.html">SDG 10</a></li>
+        </ul>
+    </nav>
 
-<header class="navbar">
-  <a href="index.html">Home</a>
-</header>
+    <section class="help-page">
+        <h1>Study Tips</h1>
+        <div class="tips">
+            <div class="tip-card">Stay organized</div>
+            <div class="tip-card">Take short breaks</div>
+            <div class="tip-card">Practice actively</div>
+        </div>
 
-<section class="help">
-  <h2>You are not behind</h2>
+        <h2>Send Feedback</h2>
+        <form action="mailto:sarah.alkubaisi@ahliyyahmutran.edu.jo" method="post" enctype="text/plain">
+            <input type="text" name="name" placeholder="Your Name" required>
+            <input type="email" name="email" placeholder="Your Email" required>
+            <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
+            <button type="submit">Send</button>
+        </form>
+    </section>
 
-  <ul>
-    <li>Try studying in short focused sessions</li>
-    <li>Rest is productive</li>
-    <li>Understanding takes time</li>
-  </ul>
-
-  <form action="mailto:sarah.alkubaisi@ahliyyahmutran.edu.jo" method="post">
-    <input type="text" placeholder="Your message">
-    <button type="submit">Send</button>
-  </form>
-</section>
-
+    <script src="js/script.js"></script>
 </body>
 </html>
