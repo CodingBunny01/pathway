@@ -4,13 +4,13 @@
   <meta charset="UTF-8">
   <title>PATHWAY</title>
   <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
 </head>
 <body>
 
-<header>
-  <div class="logo">PATHWAY</div>
+<header class="navbar">
+  <h1 class="logo">PATHWAY</h1>
   <nav>
-    <a href="index.html">Home</a>
     <a href="resources.html">Resources</a>
     <a href="sdg10.html">SDG 10</a>
     <a href="help.html">Help</a>
@@ -18,24 +18,31 @@
 </header>
 
 <section class="hero">
-  <h1>Make your own way forward.</h1>
+  <div class="hero-text fade-in">
+    <h2>Find your way forward.</h2>
+    <p>
+      Not everyone starts from the same place.
+      Access to education, support, and opportunity is not equal,
+      and so PATHWAY exists to help students build their own way forward
+      through free learning resources, guidance, and hope.
+    </p>
+  </div>
+
+  <div class="slider">
+    <img src="https://images.unsplash.com/photo-1524995997946-a1c2e315a42f" class="slide active">
+    <img src="https://images.unsplash.com/photo-1519682337058-a94d519337bc" class="slide">
+    <img src="https://images.unsplash.com/photo-1516979187457-637abb4f9353" class="slide">
+  </div>
+</section>
+
+<section class="intro">
+  <h3>A quiet place to learn</h3>
   <p>
-    Not everyone starts from the same place.
-    Access to education, support, and opportunity is not equal, and that is not your fault.
-    <br><br>
-    And so, PATHWAY exists to help students create their own path forward through free learning resources, guidance, and quiet support.
+    PATHWAY is made for students who feel behind, overwhelmed, or unseen.
+    This is not about perfection. It is about progress, curiosity,
+    and believing that knowledge should be accessible to everyone.
   </p>
 </section>
-
-<section class="carousel">
-  <img src="https://images.unsplash.com/photo-1519682337058-a94d519337bc" class="active">
-  <img src="https://images.unsplash.com/photo-1509021436665-8f07dbf5bf1d">
-  <img src="https://images.unsplash.com/photo-1524995997946-a1c2e315a42f">
-</section>
-
-<footer>
-  <p>PATHWAY is built for students who want to learn at their own pace.</p>
-</footer>
 
 <script src="script.js"></script>
 </body>
