@@ -1,43 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pathway | Home</title>
-    <link rel="stylesheet" href="css/style.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Pathway</title>
+<!-- Google Fonts included -->
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;800&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
 <nav class="navbar">
-    <div class="logo">Pathway</div>
-    <ul class="nav-links">
-        <li><a href="resources.html">Resources</a></li>
-        <li><a href="sdg10.html">SDG 10</a></li>
-        <li><a href="help.html">Help</a></li>
-    </ul>
+  <div class="logo">PATHWAY</div>
+  <ul>
+    <li><a href="resources.html">Resources</a></li>
+    <li><a href="sdg10.html">SDG 10</a></li>
+    <li><a href="help.html">Help</a></li>
+  </ul>
 </nav>
 
 <section class="hero">
-    <video class="hero-video" autoplay muted loop>
-        <source src="videos/study1.mp4" type="video/mp4">
-    </video>
-    <div class="hero-overlay"></div>
-    <div class="hero-text">
-        <h1>Pathway</h1>
-        <p>Explore. Learn. Grow.</p>
-        <a href="#intro" class="btn">Start Exploring</a>
-    </div>
+  <video class="hero-video" autoplay loop muted>
+    <source src="videos/study-hero.mp4" type="video/mp4">
+  </video>
+  <div class="hero-overlay"></div>
+  <div class="hero-content">
+    <h1 class="fade-in">Welcome to Pathway</h1>
+    <p class="fade-in delay-1">Aesthetic Study Hub for Every Learner.</p>
+    <a href="#about" class="btn fade-in delay-2">Explore</a>
+  </div>
 </section>
 
-<section id="intro" class="intro">
-    <h2>Welcome to Pathway</h2>
-    <p>An aesthetic, interactive platform for study resources and equal access to learning.</p>
+<section id="about" class="about-section">
+  <div class="section-inner fade-in-up">
+    <h2>Study. Discover. Grow.</h2>
+    <p>Pathway is designed to bring you closer to your academic goals through curated resources, interactive modules, and meaningful content — all beautifully presented.</p>
+  </div>
 </section>
 
-<footer class="footer">
-    <p>© 2025 Pathway</p>
+<footer>
+  <p>© 2025 Pathway — Made with Vision</p>
 </footer>
 
-<script src="js/script.js"></script>
+<script src="js/main.js"></script>
 </body>
 </html>
