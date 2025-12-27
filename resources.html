@@ -1,48 +1,51 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pathway | Resources</title>
-    <link rel="stylesheet" href="css/style.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Resources</title>
+<!-- Google Fonts included -->
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;800&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
 <nav class="navbar">
-    <div class="logo">Pathway</div>
-    <ul class="nav-links">
-        <li><a href="index.html">Home</a></li>
-        <li><a href="sdg10.html">SDG 10</a></li>
-        <li><a href="help.html">Help</a></li>
-    </ul>
+  <div class="logo">PATHWAY</div>
+  <ul>
+    <li><a href="index.html">Home</a></li>
+    <li><a href="sdg10.html">SDG 10</a></li>
+    <li><a href="help.html">Help</a></li>
+  </ul>
 </nav>
 
-<section class="resources">
-    <h2>Subjects</h2>
+<section class="cards-section fade-in-up">
+  <h2>Subjects</h2>
+  <div class="card-grid">
 
-    <div class="card-grid">
-        <a href="subject.html?sub=math" class="card math">
-            <div class="card-bg" style="background-image: url('images/math-banner.jpg');"></div>
-            <h3>Mathematics</h3>
-        </a>
+    <a href="subject.html?sub=math" class="card">
+      <img src="images/math-banner.jpg" alt="Math" class="card-img">
+      <div class="card-info"><h3>Mathematics</h3></div>
+    </a>
 
-        <a href="subject.html?sub=science" class="card science">
-            <div class="card-bg" style="background-image: url('images/science1.jpg');"></div>
-            <h3>Science</h3>
-        </a>
+    <a href="subject.html?sub=science" class="card">
+      <img src="images/science-banner.jpg" alt="Science" class="card-img">
+      <div class="card-info"><h3>Science</h3></div>
+    </a>
 
-        <a href="subject.html?sub=english" class="card english">
-            <div class="card-bg" style="background-image: url('images/hero1.jpg');"></div>
-            <h3>English</h3>
-        </a>
+    <a href="subject.html?sub=english" class="card">
+      <img src="images/english-banner.jpg" alt="English Study" class="card-img">
+      <div class="card-info"><h3>English</h3></div>
+    </a>
 
-        <a href="subject.html?sub=arabic" class="card arabic">
-            <div class="card-bg" style="background-image: url('images/hero2.jpg');"></div>
-            <h3>Arabic</h3>
-        </a>
-    </div>
+    <a href="subject.html?sub=arabic" class="card">
+      <img src="images/arabic-banner.jpg" alt="Arabic Study" class="card-img">
+      <div class="card-info"><h3>Arabic</h3></div>
+    </a>
+
+  </div>
 </section>
 
-<script src="js/script.js"></script>
+<script src="js/main.js"></script>
 </body>
 </html>
