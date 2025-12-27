@@ -1,11 +1,8 @@
-const images = document.querySelectorAll('.image');
+const images = document.querySelectorAll(".carousel img");
+let current = 0;
 
-const observer = new IntersectionObserver(entries => {
-  entries.forEach(entry => {
-    if (entry.isIntersecting) {
-      entry.target.classList.add('visible');
-    }
-  });
-});
-
-images.forEach(img => observer.observe(img));
+setInterval(() => {
+  images[current].classList.remove("active");
+  current = (current + 1) % images.length;
+  images[current].classList.add("active");
+}, 4500);
