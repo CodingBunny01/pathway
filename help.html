@@ -1,39 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF‑8">
-    <meta name="viewport" content="width=device‑width, initial‑scale=1.0">
-    <title>Pathway | Help</title>
-    <link rel="stylesheet" href="css/style.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Pathway - Help</title>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;800&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-<nav class="navbar">
-    <div class="logo">Pathway</div>
-    <ul class="nav‑links">
-        <li><a href="index.html">Home</a></li>
-        <li><a href="resources.html">Resources</a></li>
-        <li><a href="sdg10.html">SDG 10</a></li>
-    </ul>
+<nav>
+  <h1>PATHWAY</h1>
+  <div>
+    <a href="index.html">Home</a>
+    <a href="resources.html">Resources</a>
+    <a href="sdg10.html">SDG 10</a>
+  </div>
 </nav>
 
-<section class="help-page">
-    <h1>Study Tips</h1>
+<section class="help fade">
+  <h2 class="section-title">Study Tips</h2>
 
-    <div class="tips">
-        <div class="tip-card">Stay organized</div>
-        <div class="tip-card">Take breaks</div>
-        <div class="tip-card">Learn actively</div>
+  <div class="tips">
+    <div class="tip">
+      <h4>Consistency beats intensity</h4>
+      <p>Studying regularly in small chunks helps retention more than cramming. Make a daily habit for best results.</p>
     </div>
+    <div class="tip">
+      <h4>Active recall & practice</h4>
+      <p>Instead of just rereading notes, actively test yourself. Quizzes, flashcards, and teaching someone else work wonders.</p>
+    </div>
+    <div class="tip">
+      <h4>Rest is productive</h4>
+      <p>Breaks, sleep, and downtime improve learning. Overworking can reduce retention and focus.</p>
+    </div>
+  </div>
 
-    <h2>Feedback</h2>
-    <form action="mailto:sarah.alkubaisi@ahliyyahmutran.edu.jo" method="post" enctype="text/plain">
-        <input type="text" name="name" placeholder="Your Name" required>
-        <input type="email" name="email" placeholder="Your Email" required>
-        <textarea name="message" placeholder="Message" rows="4" required></textarea>
-        <button type="submit">Send</button>
-    </form>
+  <form action="mailto:sarah.alkubaisi@ahliyyahmutran.edu.jo" class="fade">
+    <input placeholder="Your name">
+    <input placeholder="Your email">
+    <textarea rows="4" placeholder="Message"></textarea>
+    <button>Send</button>
+  </form>
 </section>
 
+<script src="script.js"></script>
 </body>
 </html>
