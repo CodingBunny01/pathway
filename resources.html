@@ -3,49 +3,123 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Resources</title>
-<!-- Google Fonts included -->
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;800&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="css/style.css">
+<title>Pathway - Resources</title>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;800&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-<nav class="navbar">
-  <div class="logo">PATHWAY</div>
-  <ul>
-    <li><a href="index.html">Home</a></li>
-    <li><a href="sdg10.html">SDG 10</a></li>
-    <li><a href="help.html">Help</a></li>
-  </ul>
+<nav>
+  <h1>PATHWAY</h1>
+  <div>
+    <a href="index.html">Home</a>
+    <a href="sdg10.html">SDG 10</a>
+    <a href="help.html">Help</a>
+  </div>
 </nav>
 
-<section class="cards-section fade-in-up">
-  <h2>Subjects</h2>
-  <div class="card-grid">
+<section id="resources" class="fade">
+  <h2 class="section-title">Study Resources</h2>
 
-    <a href="subject.html?sub=math" class="card">
-      <img src="images/math-banner.jpg" alt="Math" class="card-img">
-      <div class="card-info"><h3>Mathematics</h3></div>
-    </a>
-
-    <a href="subject.html?sub=science" class="card">
-      <img src="images/science-banner.jpg" alt="Science" class="card-img">
-      <div class="card-info"><h3>Science</h3></div>
-    </a>
-
-    <a href="subject.html?sub=english" class="card">
-      <img src="images/english-banner.jpg" alt="English Study" class="card-img">
-      <div class="card-info"><h3>English</h3></div>
-    </a>
-
-    <a href="subject.html?sub=arabic" class="card">
-      <img src="images/arabic-banner.jpg" alt="Arabic Study" class="card-img">
-      <div class="card-info"><h3>Arabic</h3></div>
-    </a>
-
+  <!-- Top Links -->
+  <div class="subject-links">
+    <a href="#math">Mathematics</a>
+    <a href="#physics">Physics</a>
+    <a href="#chemistry">Chemistry</a>
+    <a href="#biology">Biology</a>
+    <a href="#history">History</a>
+    <a href="#english">English</a>
+    <a href="#arabic">Arabic</a>
   </div>
+
+  <!-- Math -->
+  <div id="math" class="subject-section">
+    <h3>Mathematics</h3>
+    <video controls poster="https://images.unsplash.com/photo-1523240795612-9a054b0db644">
+      <source src="https://cdn.coverr.co/videos/coverr-studying-in-library-9715/1080p.mp4">
+    </video>
+    <p>Useful math websites:</p>
+    <ul>
+      <li><a href="https://www.khanacademy.org/math" target="_blank">Khan Academy</a></li>
+      <li><a href="https://www.mathsisfun.com" target="_blank">Math is Fun</a></li>
+      <li><a href="https://www.youtube.com/@PatrickJMT" target="_blank">PatrickJMT YouTube</a></li>
+    </ul>
+  </div>
+
+  <!-- Physics -->
+  <div id="physics" class="subject-section">
+    <h3>Physics</h3>
+    <video controls poster="https://images.unsplash.com/photo-1532012197267-da84d127e765">
+      <source src="https://cdn.coverr.co/videos/coverr-physics-lab-10850/1080p.mp4">
+    </video>
+    <ul>
+      <li><a href="https://www.khanacademy.org/science/physics" target="_blank">Khan Academy Physics</a></li>
+      <li><a href="https://www.physicsclassroom.com/" target="_blank">Physics Classroom</a></li>
+    </ul>
+  </div>
+
+  <!-- Chemistry -->
+  <div id="chemistry" class="subject-section">
+    <h3>Chemistry</h3>
+    <video controls poster="https://images.unsplash.com/photo-1532361543450-5bc6f0489673">
+      <source src="https://cdn.coverr.co/videos/coverr-chemistry-lab-10758/1080p.mp4">
+    </video>
+    <ul>
+      <li><a href="https://www.khanacademy.org/science/chemistry" target="_blank">Khan Academy Chemistry</a></li>
+      <li><a href="https://www.chemguide.co.uk/" target="_blank">Chemguide</a></li>
+    </ul>
+  </div>
+
+  <!-- Biology -->
+  <div id="biology" class="subject-section">
+    <h3>Biology</h3>
+    <video controls poster="https://images.unsplash.com/photo-1504090122945-18c1672b91d2">
+      <source src="https://cdn.coverr.co/videos/coverr-biology-lab-10632/1080p.mp4">
+    </video>
+    <ul>
+      <li><a href="https://www.khanacademy.org/science/biology" target="_blank">Khan Academy Biology</a></li>
+      <li><a href="https://www.nature.com/subjects/biology" target="_blank">Nature Biology Resources</a></li>
+    </ul>
+  </div>
+
+  <!-- History -->
+  <div id="history" class="subject-section">
+    <h3>History</h3>
+    <video controls poster="https://images.unsplash.com/photo-1527980965255-d3b416303d12">
+      <source src="https://cdn.coverr.co/videos/coverr-history-lecture-10890/1080p.mp4">
+    </video>
+    <ul>
+      <li><a href="https://www.khanacademy.org/humanities/world-history" target="_blank">Khan Academy History</a></li>
+      <li><a href="https://www.history.com/" target="_blank">History.com</a></li>
+    </ul>
+  </div>
+
+  <!-- English -->
+  <div id="english" class="subject-section">
+    <h3>English</h3>
+    <video controls poster="https://images.unsplash.com/photo-1519681393784-d120267933ba">
+      <source src="https://cdn.coverr.co/videos/coverr-studying-books-9717/1080p.mp4">
+    </video>
+    <ul>
+      <li><a href="https://www.khanacademy.org/ela" target="_blank">Khan Academy English</a></li>
+      <li><a href="https://www.grammarly.com/blog/" target="_blank">Grammarly Blog</a></li>
+    </ul>
+  </div>
+
+  <!-- Arabic -->
+  <div id="arabic" class="subject-section">
+    <h3>Arabic</h3>
+    <video controls poster="https://images.unsplash.com/photo-1509099836639-18ba1795216d">
+      <source src="https://cdn.coverr.co/videos/coverr-arabic-class-10920/1080p.mp4">
+    </video>
+    <ul>
+      <li><a href="https://www.khanacademy.org/" target="_blank">Khan Academy (Arabic content)</a></li>
+      <li><a href="https://www.aljazeera.net/" target="_blank">Al Jazeera Arabic</a></li>
+    </ul>
+  </div>
+
 </section>
 
-<script src="js/main.js"></script>
+<script src="script.js"></script>
 </body>
 </html>
