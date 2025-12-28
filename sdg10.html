@@ -4,81 +4,57 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Pathway - SDG 10</title>
-<link href="style.css" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;800&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+
 <style>
-/* Fade-in animation */
-.fade {
-  opacity: 0;
-  transform: translateY(20px);
-  animation: fadeIn 1s forwards;
-}
-@keyframes fadeIn {
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-
-/* Carousel container */
-.carousel-container {
+/* carousel */
+.sdg-carousel {
   display: flex;
+  gap: 1.5rem;
   overflow-x: auto;
-  gap: 1rem;
-  scroll-behavior: smooth;
   padding: 2rem 0;
+  scroll-snap-type: x mandatory;
 }
 
-.carousel-container::-webkit-scrollbar {
-  display: none; /* hide scrollbar */
+.sdg-carousel::-webkit-scrollbar {
+  display: none;
 }
 
-.carousel-item {
-  flex: 0 0 auto;
-  transition: transform 0.3s;
-  border-radius: 15px;
+.sdg-img {
+  flex: 0 0 300px;
+  scroll-snap-align: center;
+  border-radius: 16px;
   overflow: hidden;
-  position: relative;
-  cursor: pointer;
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
 }
 
-.carousel-item img {
-  display: block;
-  width: 300px;
+.sdg-img img {
+  width: 100%;
   height: 200px;
   object-fit: cover;
-  border-radius: 15px;
-  transition: transform 0.3s, box-shadow 0.3s;
 }
 
-.carousel-item:hover img {
-  transform: scale(1.1);
-  box-shadow: 0 10px 20px rgba(255,111,163,0.4);
+.sdg-img:hover {
+  transform: scale(1.12);
+  box-shadow: 0 12px 30px rgba(255,111,163,0.4);
 }
 
-/* SDG text styling */
+/* SDG text */
 .sdg-text {
-  margin-top: 2rem;
-  border-left: 5px solid #ff6fa3;
-  padding-left: 1rem;
-  line-height: 1.7;
+  margin-top: 3rem;
+  border-left: 4px solid #ff6fa3;
+  padding-left: 1.2rem;
+  line-height: 1.8;
 }
 
 .sdg-text h3 {
-  margin-top: 2rem;
-  color: #4e79ff;
-}
-
-/* Optional arrows if needed */
-.carousel-arrow {
-  font-size: 2rem;
-  cursor: pointer;
-  color: #4e79ff;
-  margin: 0 1rem;
-  user-select: none;
+  margin-top: 2.5rem;
+  font-weight: 700;
 }
 </style>
 </head>
+
 <body>
 
 <nav>
@@ -91,30 +67,51 @@
 </nav>
 
 <section class="fade">
-  <h2 class="section-title">SDG 10 - Reducing Inequalities</h2>
+  <h2 class="section-title">SDG 10 — Reducing Inequalities</h2>
 
   <!-- Carousel -->
-  <div class="carousel-container">
-    <div class="carousel-item"><img src="https://i.pinimg.com/736x/2b/92/ca/2b92ca926a8c76cdcd95592bfcf445ef.jpg" alt="SDG Image 1"></div>
-    <div class="carousel-item"><img src="https://i.pinimg.com/736x/42/b4/3c/42b43cc74fba5fb5862e19b5f3a4fec0.jpg" alt="SDG Image 2"></div>
-    <div class="carousel-item"><img src="https://i.pinimg.com/736x/3a/1f/82/3a1f828f8b3e2c4cf3d0a97881c4ef2b.jpg" alt="SDG Image 3"></div>
-    <div class="carousel-item"><img src="https://i.pinimg.com/736x/23/32/02/233202086956101035.jpg" alt="SDG Image 4"></div>
-    <div class="carousel-item"><img src="https://i.pinimg.com/736x/79/27/74/792774340696367516.jpg" alt="SDG Image 5"></div>
+  <div class="sdg-carousel">
+    <div class="sdg-img"><img src="https://i.pinimg.com/736x/2b/92/ca/2b92ca926a8c76cdcd95592bfcf445ef.jpg"></div>
+    <div class="sdg-img"><img src="https://i.pinimg.com/736x/42/b4/3c/42b43cc74fba5fb5862e19b5f3a4fec0.jpg"></div>
+    <div class="sdg-img"><img src="https://i.pinimg.com/736x/3a/1f/82/3a1f828f8b3e2c4cf3d0a97881c4ef2b.jpg"></div>
+    <div class="sdg-img"><img src="https://i.pinimg.com/736x/23/32/02/233202086956101035.jpg"></div>
+    <div class="sdg-img"><img src="https://i.pinimg.com/736x/79/27/74/792774340696367516.jpg"></div>
   </div>
 
-  <!-- SDG Text -->
+  <!-- Text -->
   <div class="sdg-text">
     <h3>Why SDG 10 Matters</h3>
-    <p>Reducing inequalities is essential for creating a fair world where everyone has equal access to education, opportunities, and resources. Inequality not only limits potential, but also stifles innovation, hampers economic growth, and creates social tensions. Communities with high inequality often face challenges in health, education, and employment, which can perpetuate cycles of poverty for generations.</p>
-    <p>Addressing these disparities ensures that every student, regardless of background, has the chance to learn, grow, and succeed. By focusing on fairness, society as a whole becomes stronger, more resilient, and more harmonious.</p>
+    <p>
+      SDG 10 focuses on reducing inequalities within and among societies — especially in access to education,
+      opportunity, and resources. When inequality exists, talent is wasted, voices are silenced, and potential
+      is lost. Education should never depend on privilege, location, or financial background.
+    </p>
+    <p>
+      A fair world is one where everyone starts with access — not advantage. Reducing inequality strengthens
+      communities, promotes social stability, and allows individuals to reach their full potential.
+    </p>
 
     <h3>How SDG 10 Inspired Pathway</h3>
-    <p>Seeing the gap in access to quality study resources motivated me to create Pathway. Many students struggle to find reliable, structured materials for their subjects, while others have abundant resources at their fingertips. This imbalance highlighted the urgent need for a platform that bridges this divide, making learning accessible and engaging for all.</p>
-    <p>Pathway was born out of this vision: a space where students can explore curated videos, links, and interactive content, helping them maximize their potential and pursue their goals regardless of prior opportunities.</p>
+    <p>
+      While studying, I noticed how fragmented and unequal access to learning resources can be. Some students
+      have endless support and guidance, while others struggle to even find where to start.
+    </p>
+    <p>
+      Pathway was created to address this gap — bringing structured, high-quality study materials into one
+      accessible space. The goal is not to replace teachers, but to support students who need clarity,
+      direction, and equal opportunity to learn.
+    </p>
 
     <h3>How This App Can Help</h3>
-    <p>Pathway provides structured resources, including subject-specific videos, educational websites, and interactive tips, all in one place. By offering guided learning paths, students can focus on what matters most, develop confidence, and track their progress. This platform empowers learners to overcome barriers, discover new interests, and gain the knowledge needed to succeed academically and personally.</p>
-    <p>Ultimately, Pathway fosters equal opportunities, encourages self-directed learning, and supports students in achieving their aspirations while promoting the ideals of SDG 10 in education.</p>
+    <p>
+      Pathway provides curated subject resources, trusted educational videos, and guided study sections
+      designed to reduce confusion and overwhelm. By centralizing learning materials, students can focus on
+      understanding rather than searching.
+    </p>
+    <p>
+      This platform supports SDG 10 by making education more inclusive, empowering students regardless of
+      background, and helping bridge learning gaps through accessibility and structure.
+    </p>
   </div>
 </section>
 
