@@ -4,21 +4,25 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Pathway - SDG 10</title>
-<link href="style.css" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;800&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
 <style>
-.fade { opacity:0; transform:translateY(20px); animation:fadeIn 1s forwards; }
-@keyframes fadeIn { to { opacity:1; transform:translateY(0); } }
-.image-scroll { display:flex; overflow-x:auto; scroll-behavior:smooth; gap:1rem; padding:2rem 0; }
-.image-scroll::-webkit-scrollbar { height:8px; }
-.image-scroll::-webkit-scrollbar-thumb { background:#ff6fa3; border-radius:10px; }
-.image-scroll img { flex:0 0 auto; width:250px; border-radius:15px; transition:transform 0.3s, box-shadow 0.3s; cursor:pointer; border:3px solid transparent; }
-.image-scroll img:hover { transform:scale(1.1); border:3px solid #ff6fa3; box-shadow:0 8px 20px rgba(255,111,163,0.4); }
-.image-scroll img:nth-child(2) { transform:scale(1.05); }
-.sdg-text { margin:2rem 0; padding:1rem 2rem; border-left:6px solid #ff6fa3; background:rgba(255,111,163,0.05); border-radius:10px; animation:fadeIn 1s forwards; }
-nav h1 { display:inline-block; }
-nav div a { margin-left:1rem; text-decoration:none; font-weight:600; color:#4e79ff; }
-nav div a:hover { color:#ff6fa3; }
+  body { font-family: 'Poppins', sans-serif; margin:0; background:#fff; color:#333; }
+  nav { display:flex; justify-content:space-between; align-items:center; padding:1rem 2rem; background:#fff; box-shadow:0 2px 10px rgba(0,0,0,0.05); position:sticky; top:0; z-index:100; }
+  nav h1 { color:#ff6fa3; margin:0; }
+  nav div a { margin-left:1.5rem; text-decoration:none; color:#333; font-weight:500; transition:color 0.3s; }
+  nav div a:hover { color:#ff6fa3; }
+  .banner { width:100%; padding:2rem; text-align:center; background:#ffe6f0; color:#ff6fa3; font-size:2rem; font-weight:600; }
+  .fade { opacity:0; transform:translateY(20px); animation:fadeIn 1s forwards; }
+  @keyframes fadeIn { to { opacity:1; transform:translateY(0); } }
+
+  /* Carousel */
+  .carousel-container { position:relative; overflow:hidden; padding:2rem 0; }
+  .carousel { display:flex; gap:1rem; transition:transform 0.5s ease; }
+  .carousel img { width:250px; border-radius:15px; flex-shrink:0; transition:transform 0.3s, border 0.3s, box-shadow 0.3s; cursor:pointer; border:3px solid transparent; }
+  .carousel img:hover { transform:scale(1.1); border:3px solid #ff6fa3; box-shadow:0 8px 20px rgba(255,111,163,0.4); }
+
+  .sdg-text { margin:2rem; padding:1rem 2rem; border-left:6px solid #ff6fa3; background:rgba(255,111,163,0.05); border-radius:10px; }
+
 </style>
 </head>
 <body>
@@ -32,33 +36,49 @@ nav div a:hover { color:#ff6fa3; }
   </div>
 </nav>
 
+<div class="banner fade">Reducing Inequalities: SDG 10</div>
+
 <section class="fade">
-  <h2 class="section-title">SDG 10 - Reducing Inequalities</h2>
-
-  <div class="image-scroll">
-    <img src="https://i.pinimg.com/736x/2b/92/ca/2b92ca926a8c76cdcd95592bfcf445ef.jpg" alt="SDG 10 Image 1">
-    <img src="https://i.pinimg.com/736x/42/b4/3c/42b43cc74fba5fb5862e19b5f3a4fec0.jpg" alt="SDG 10 Image 2">
-    <img src="https://i.pinimg.com/564x/ff/1f/3e/ff1f3e0a87b9424da6a5f7c4bc6c9f3e.jpg" alt="SDG 10 Image 3">
-    <img src="https://i.pinimg.com/564x/f2/5f/3d/f25f3d2b9ec3c6460f7f2b5c9f3e.jpg" alt="SDG 10 Image 4">
-    <img src="https://i.pinimg.com/564x/7d/9d/4a/7d9d4a7a0b1f2345678abcd1234ef.jpg" alt="SDG 10 Image 5">
+  <div class="carousel-container">
+    <div class="carousel" id="carousel">
+      <img src="https://i.pinimg.com/736x/2b/92/ca/2b92ca926a8c76cdcd95592bfcf445ef.jpg">
+      <img src="https://i.pinimg.com/736x/42/b4/3c/42b43cc74fba5fb5862e19b5f3a4fec0.jpg">
+      <img src="https://i.pinimg.com/736x/15/17/15/151715081192956090.jpg">
+      <img src="https://i.pinimg.com/736x/23/32/02/233202086956101035.jpg">
+      <img src="https://i.pinimg.com/736x/79/27/74/792774340696367516.jpg">
+    </div>
   </div>
 
-  <div class="sdg-text">
-    <h3>Why SDG 10 Matters</h3>
-    <p>Reducing inequalities is essential for creating a fair world where every individual has access to education, health care, and opportunities. When inequality persists, it limits personal potential, stifles societal growth, and can create social tension and unrest. By addressing inequality, we can empower communities, enhance economic stability, and ensure that everyone can contribute meaningfully to society.</p>
-  </div>
+  <div class="sdg-text fade">
+    <h2>Why SDG 10 Matters</h2>
+    <p>Reducing inequalities is essential for creating a fair world where everyone has equal access to education, opportunities, and resources. Inequality limits potential, hampers growth, and creates social tension. Every student should have the tools to thrive, no matter their background.</p>
 
-  <div class="sdg-text">
-    <h3>How SDG 10 Inspired Pathway</h3>
-    <p>Observing the disparities in educational resources and support, I felt motivated to create Pathway. Many students face barriers due to socioeconomic differences, and SDG 10 highlighted the importance of bridging these gaps. Pathway aims to provide a platform where quality learning materials are accessible to all, regardless of background, helping to reduce educational inequalities.</p>
-  </div>
+    <h2>How SDG 10 Inspired Pathway</h2>
+    <p>Seeing the gap in access to quality study resources motivated me to build Pathway. This platform ensures students from different backgrounds can access curated, high-quality learning materials in one place. It drives the mission of equal opportunity in education.</p>
 
-  <div class="sdg-text">
-    <h3>How This App Can Help</h3>
-    <p>Pathway offers structured subject resources, curated videos, and helpful links to ensure students can learn efficiently. By presenting materials in an interactive and aesthetically engaging format, Pathway empowers students to study effectively and build confidence in their abilities, making education more inclusive and equitable.</p>
+    <h2>How This App Can Help</h2>
+    <p>Pathway provides structured resources, relevant videos, and educational links for multiple subjects. It helps students bridge learning gaps, empowers efficient studying, and ensures no one is left behind. The app promotes learning fairness while maintaining an interactive, engaging environment.</p>
   </div>
 </section>
 
-<script src="script.js"></script>
+<script>
+  // Fade in
+  document.addEventListener('DOMContentLoaded', () => {
+    const faders = document.querySelectorAll('.fade');
+    faders.forEach(el => el.style.opacity = 1);
+  });
+
+  // Carousel auto scroll
+  const carousel = document.getElementById('carousel');
+  let scrollAmount = 0;
+  const scrollPerTick = 260; // width + gap
+  function autoScroll() {
+    scrollAmount += scrollPerTick;
+    if(scrollAmount >= carousel.scrollWidth - carousel.clientWidth) scrollAmount = 0;
+    carousel.style.transform = `translateX(-${scrollAmount}px)`;
+  }
+  setInterval(autoScroll, 2500);
+</script>
+
 </body>
 </html>
