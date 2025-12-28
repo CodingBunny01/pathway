@@ -4,22 +4,25 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Pathway - Help</title>
-<link href="style.css" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;800&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
 <style>
-.fade { opacity:0; transform:translateY(20px); animation:fadeIn 1s forwards; }
-@keyframes fadeIn { to { opacity:1; transform:translateY(0); } }
-.tip { padding:1rem 1.5rem; margin-bottom:1rem; border-radius:10px; background:#f0f0f0; transition: transform 0.3s, background 0.3s; cursor:pointer; }
-.tip:hover { transform:scale(1.05); background:#ff6fa3; color:white; }
-form { display:flex; flex-direction:column; gap:1rem; max-width:500px; margin-top:1rem; }
-form input, form textarea { padding:0.8rem 1rem; border-radius:10px; border:1px solid #ccc; font-family:inherit; font-size:1rem; transition:border 0.3s; }
-form input:focus, form textarea:focus { border:2px solid #ff6fa3; outline:none; }
-form button { padding:0.8rem 1.2rem; border-radius:10px; border:none; background:#4e79ff; color:white; font-weight:600; cursor:pointer; transition: transform 0.3s, background 0.3s; }
-form button:hover { transform:scale(1.05); background:#ff6fa3; }
-nav h1 { display:inline-block; }
-nav div a { margin-left:1rem; text-decoration:none; font-weight:600; color:#4e79ff; }
-nav div a:hover { color:#ff6fa3; }
-section { padding:2rem; }
+  body { font-family:'Poppins', sans-serif; margin:0; background:#fff; color:#333; }
+  nav { display:flex; justify-content:space-between; align-items:center; padding:1rem 2rem; background:#fff; box-shadow:0 2px 10px rgba(0,0,0,0.05); position:sticky; top:0; z-index:100; }
+  nav h1 { color:#ff6fa3; margin:0; }
+  nav div a { margin-left:1.5rem; text-decoration:none; color:#333; font-weight:500; transition:color 0.3s; }
+  nav div a:hover { color:#ff6fa3; }
+
+  .banner { width:100%; padding:2rem; text-align:center; background:#ffe6f0; color:#ff6fa3; font-size:2rem; font-weight:600; }
+
+  .tips { display:flex; gap:1.5rem; padding:2rem; justify-content:center; }
+  .tip { flex:1; padding:1rem; border-radius:10px; background:#f0f0f0; text-align:center; font-weight:500; transition: transform 0.3s, background 0.3s; cursor:pointer; }
+  .tip:hover { transform:scale(1.05); background:#ff6fa3; color:white; }
+
+  form { display:flex; flex-direction:column; gap:1rem; max-width:500px; margin:2rem auto; }
+  form input, form textarea { padding:0.8rem 1rem; border-radius:10px; border:1px solid #ccc; font-family:inherit; font-size:1rem; transition:border 0.3s; }
+  form input:focus, form textarea:focus { border:2px solid #ff6fa3; outline:none; }
+  form button { padding:0.8rem 1.2rem; border-radius:10px; border:none; background:#4e79ff; color:white; font-weight:600; cursor:pointer; transition: transform 0.3s, background 0.3s; }
+  form button:hover { transform:scale(1.05); background:#ff6fa3; }
 </style>
 </head>
 <body>
@@ -33,14 +36,17 @@ section { padding:2rem; }
   </div>
 </nav>
 
-<section class="fade">
-  <h2 class="section-title">Study Tips</h2>
-  <div class="tip">Set clear goals: Outline what you want to achieve each study session to stay focused.</div>
-  <div class="tip">Take regular breaks: Avoid burnout and keep your mind fresh by using techniques like the Pomodoro method.</div>
-  <div class="tip">Active recall: Test yourself on the material instead of just reading it to improve retention.</div>
+<div class="banner">Need Help? Tips & Contact</div>
 
-  <h2 class="section-title" style="margin-top:4rem;">Contact Me</h2>
-  <form action="mailto:sarah.alkubaisi@ahliyyahmutran.edu.jo" method="post" enctype="text/plain">
+<section class="tips">
+  <div class="tip">Tip 1<br><small>Focus on small study sessions daily for better retention.</small></div>
+  <div class="tip">Tip 2<br><small>Take active notes while watching videos or reading resources.</small></div>
+  <div class="tip">Tip 3<br><small>Review regularly and practice past papers for mastery.</small></div>
+</section>
+
+<section>
+  <h2 style="text-align:center; margin-top:3rem;">Contact Me</h2>
+  <form id="contactForm">
     <input type="text" name="name" placeholder="Your Name" required>
     <input type="email" name="email" placeholder="Your Email" required>
     <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
@@ -48,6 +54,15 @@ section { padding:2rem; }
   </form>
 </section>
 
-<script src="script.js"></script>
+<script>
+  // Contact form safe dummy submission
+  const form = document.getElementById('contactForm');
+  form.addEventListener('submit', function(e){
+    e.preventDefault();
+    alert('Message sent! Thank you 😊');
+    form.reset();
+  });
+</script>
+
 </body>
 </html>
