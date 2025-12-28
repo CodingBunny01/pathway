@@ -7,32 +7,18 @@
 <link href="style.css" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;800&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
 <style>
-.fade {
-  opacity: 0;
-  transform: translateY(20px);
-  animation: fadeIn 1s forwards;
-}
-@keyframes fadeIn { to { opacity: 1; transform: translateY(0); } }
-
-.sdg10-section { padding: 2rem; margin-bottom: 3rem; }
-.sdg10-section h2 { color: #ff6fa3; font-weight: 700; margin-bottom: 1rem; }
-.sdg10-section p { margin-bottom: 1rem; line-height: 1.6; font-size: 1.1rem; color: #333; }
-
-.sdg10-images {
-  display: flex; overflow-x: auto; gap: 1rem; padding: 1rem 0; scroll-behavior: smooth;
-}
-.sdg10-images::-webkit-scrollbar { height: 8px; }
-.sdg10-images::-webkit-scrollbar-thumb { background: #ff6fa3; border-radius: 4px; }
-
-.sdg10-images img {
-  border-radius: 15px; height: 250px; flex-shrink: 0;
-  transition: transform 0.3s, box-shadow 0.3s; cursor: pointer;
-}
-.sdg10-images img:hover { transform: scale(1.1); box-shadow: 0 8px 20px rgba(255,111,163,0.5); }
-
-nav { display: flex; justify-content: space-between; align-items: center; padding: 1rem 2rem; background: #4e79ff; color: white; }
-nav a { margin-left: 1rem; text-decoration: none; color: white; font-weight: 600; }
-nav a:hover { text-decoration: underline; }
+.fade { opacity:0; transform:translateY(20px); animation:fadeIn 1s forwards; }
+@keyframes fadeIn { to { opacity:1; transform:translateY(0); } }
+.image-scroll { display:flex; overflow-x:auto; scroll-behavior:smooth; gap:1rem; padding:2rem 0; }
+.image-scroll::-webkit-scrollbar { height:8px; }
+.image-scroll::-webkit-scrollbar-thumb { background:#ff6fa3; border-radius:10px; }
+.image-scroll img { flex:0 0 auto; width:250px; border-radius:15px; transition:transform 0.3s, box-shadow 0.3s; cursor:pointer; border:3px solid transparent; }
+.image-scroll img:hover { transform:scale(1.1); border:3px solid #ff6fa3; box-shadow:0 8px 20px rgba(255,111,163,0.4); }
+.image-scroll img:nth-child(2) { transform:scale(1.05); }
+.sdg-text { margin:2rem 0; padding:1rem 2rem; border-left:6px solid #ff6fa3; background:rgba(255,111,163,0.05); border-radius:10px; animation:fadeIn 1s forwards; }
+nav h1 { display:inline-block; }
+nav div a { margin-left:1rem; text-decoration:none; font-weight:600; color:#4e79ff; }
+nav div a:hover { color:#ff6fa3; }
 </style>
 </head>
 <body>
@@ -46,24 +32,30 @@ nav a:hover { text-decoration: underline; }
   </div>
 </nav>
 
-<section class="sdg10-section fade">
-  <h2>Why SDG 10 Matters</h2>
-  <p>Reducing inequalities is essential for creating a fair world where every student, regardless of background, can access the education and tools they need to thrive. Inequality hinders potential, creates unnecessary barriers, and prevents communities from growing together.</p>
-  <p>Education should be a bridge, not a privilege. By addressing gaps in access, students can unlock opportunities that were previously unreachable, fostering innovation, empathy, and social cohesion. Reducing disparities also empowers learners to pursue their dreams with confidence, knowing that resources and guidance are available.</p>
+<section class="fade">
+  <h2 class="section-title">SDG 10 - Reducing Inequalities</h2>
 
-  <h2>How SDG 10 Inspired Pathway</h2>
-  <p>Seeing the inequalities in access to quality study materials inspired the creation of Pathway. I wanted a platform that ensures students from different socio-economic backgrounds can find structured, high-quality learning resources all in one place. SDG 10 reminded me that even small steps toward equality can have a huge impact.</p>
-  <p>By curating educational content and organizing it intuitively, Pathway helps level the playing field. Students can now explore subjects freely, discover valuable tutorials, and build a strong foundation for their academic journey.</p>
-
-  <h2>How This App Can Help</h2>
-  <p>Pathway provides structured resources, curated videos, and links for multiple subjects to help students bridge learning gaps. It encourages independent learning, promotes self-confidence, and equips students with the knowledge and tools to succeed academically.</p>
-  <p>The platform also supports different learning styles, offering interactive content and clear navigation, making studying engaging, effective, and enjoyable for teenagers.</p>
-
-  <div class="sdg10-images">
+  <div class="image-scroll">
     <img src="https://i.pinimg.com/736x/2b/92/ca/2b92ca926a8c76cdcd95592bfcf445ef.jpg" alt="SDG 10 Image 1">
     <img src="https://i.pinimg.com/736x/42/b4/3c/42b43cc74fba5fb5862e19b5f3a4fec0.jpg" alt="SDG 10 Image 2">
-    <img src="https://i.pinimg.com/736x/64/ab/f2/64abf2f96c3c4d05c0b02dfb9a0e9d1c.jpg" alt="SDG 10 Image 3">
-    <img src="https://i.pinimg.com/736x/ea/67/d2/ea67d2e5fef63f9277b9c9f6b71d4f0b.jpg" alt="SDG 10 Image 4">
+    <img src="https://i.pinimg.com/564x/ff/1f/3e/ff1f3e0a87b9424da6a5f7c4bc6c9f3e.jpg" alt="SDG 10 Image 3">
+    <img src="https://i.pinimg.com/564x/f2/5f/3d/f25f3d2b9ec3c6460f7f2b5c9f3e.jpg" alt="SDG 10 Image 4">
+    <img src="https://i.pinimg.com/564x/7d/9d/4a/7d9d4a7a0b1f2345678abcd1234ef.jpg" alt="SDG 10 Image 5">
+  </div>
+
+  <div class="sdg-text">
+    <h3>Why SDG 10 Matters</h3>
+    <p>Reducing inequalities is essential for creating a fair world where every individual has access to education, health care, and opportunities. When inequality persists, it limits personal potential, stifles societal growth, and can create social tension and unrest. By addressing inequality, we can empower communities, enhance economic stability, and ensure that everyone can contribute meaningfully to society.</p>
+  </div>
+
+  <div class="sdg-text">
+    <h3>How SDG 10 Inspired Pathway</h3>
+    <p>Observing the disparities in educational resources and support, I felt motivated to create Pathway. Many students face barriers due to socioeconomic differences, and SDG 10 highlighted the importance of bridging these gaps. Pathway aims to provide a platform where quality learning materials are accessible to all, regardless of background, helping to reduce educational inequalities.</p>
+  </div>
+
+  <div class="sdg-text">
+    <h3>How This App Can Help</h3>
+    <p>Pathway offers structured subject resources, curated videos, and helpful links to ensure students can learn efficiently. By presenting materials in an interactive and aesthetically engaging format, Pathway empowers students to study effectively and build confidence in their abilities, making education more inclusive and equitable.</p>
   </div>
 </section>
 
