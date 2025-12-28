@@ -6,8 +6,38 @@
 <title>Pathway - Help</title>
 <link href="style.css" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;800&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+<style>
+.fade { opacity: 0; transform: translateY(20px); animation: fadeIn 1s forwards; }
+@keyframes fadeIn { to { opacity: 1; transform: translateY(0); } }
+
+.help-tips { display: flex; flex-direction: column; gap: 1rem; margin-bottom: 2rem; }
+.help-tips .tip {
+  background: #ff6fa3; color: white; padding: 1rem; border-radius: 15px; font-weight: 500;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+.help-tips .tip:hover { transform: scale(1.05); box-shadow: 0 10px 25px rgba(255,111,163,0.4); }
+
+.contact-form { display: flex; flex-direction: column; gap: 1rem; max-width: 500px; }
+.contact-form input, .contact-form textarea {
+  padding: 0.8rem; border-radius: 10px; border: 2px solid #ccc; font-size: 1rem; resize: none;
+  transition: border 0.3s, box-shadow 0.3s;
+}
+.contact-form input:focus, .contact-form textarea:focus {
+  outline: none; border-color: #ff6fa3; box-shadow: 0 0 10px rgba(255,111,163,0.4);
+}
+.contact-form button {
+  padding: 0.8rem 1.2rem; border-radius: 10px; border: none; background: #ff6fa3; color: white;
+  font-weight: 600; cursor: pointer; transition: transform 0.3s, box-shadow 0.3s;
+}
+.contact-form button:hover { transform: scale(1.05); box-shadow: 0 8px 20px rgba(255,111,163,0.5); }
+
+nav { display: flex; justify-content: space-between; align-items: center; padding: 1rem 2rem; background: #4e79ff; color: white; }
+nav a { margin-left: 1rem; text-decoration: none; color: white; font-weight: 600; }
+nav a:hover { text-decoration: underline; }
+</style>
 </head>
 <body>
+
 <nav>
   <h1>PATHWAY</h1>
   <div>
@@ -18,24 +48,24 @@
 </nav>
 
 <section class="fade">
-  <h2 class="section-title">Study Tips</h2>
-  <div class="tips">
-    <div class="tip fade">
+  <h2>Study Tips</h2>
+  <div class="help-tips">
+    <div class="tip">
       <h3>Set Clear Goals</h3>
-      <p>Define what you want to achieve before each study session. This helps you stay focused and measure your progress.</p>
+      <p>Break your study sessions into achievable objectives. This helps maintain focus and track your progress effectively.</p>
     </div>
-    <div class="tip fade">
-      <h3>Active Learning</h3>
-      <p>Engage with the material by taking notes, summarizing concepts, or teaching someone else. Passive reading is less effective.</p>
+    <div class="tip">
+      <h3>Take Breaks</h3>
+      <p>Regular breaks prevent burnout and improve information retention. Step away, stretch, or take a short walk to refresh your mind.</p>
     </div>
-    <div class="tip fade">
-      <h3>Breaks & Balance</h3>
-      <p>Take short breaks to avoid burnout. Balance study sessions with physical activity and rest to improve retention and focus.</p>
+    <div class="tip">
+      <h3>Use Active Learning</h3>
+      <p>Engage with the material by summarizing, teaching others, or testing yourself. Active methods enhance understanding far better than passive reading.</p>
     </div>
   </div>
 
   <h2 class="section-title" style="margin-top:4rem;">Contact Me</h2>
-  <form action="mailto:sarah.alkubaisi@ahliyyahmutran.edu.jo" method="post" enctype="text/plain">
+  <form class="contact-form" action="#" method="POST">
     <input type="text" name="name" placeholder="Your Name" required>
     <input type="email" name="email" placeholder="Your Email" required>
     <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
